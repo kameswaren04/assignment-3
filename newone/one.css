@@ -1,0 +1,43 @@
+/* *{
+    height: 100vh;
+    width: 100%;
+
+}
+.container{
+    display: flex;
+
+
+    
+}
+.content{
+    width: 60%;
+}
+.side{
+    width: 40%;
+}
+footer{
+    display: flex;
+} */
+
+*{
+    height: 100vh;
+    width: 100%;
+}
+.header{
+    border: 2px solid ;
+}
+.content{
+    display: flex;
+
+}
+.a{
+    width: 30%;
+}
+.b{
+    width: 40%;
+}
+.c{
+    width: 30%;
+}
+
+

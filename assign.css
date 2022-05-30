@@ -5,16 +5,17 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    background-color: #F4F9FF;
+    /* background-color: #F4F9FF; */
     
 
 }
 .container{
     display: flex;
+    background-color: #F4F9FF;
 }
 
 .side{
-    position:sticky;
+    position:fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -56,11 +57,13 @@
 }
 .header{
 
-    height: 10%;
+    /* height: 70%; */
+    padding: 15px;
     width: 95vw;
-    position: sticky;
+    position: fixed;
     align-items: center;
     top: 0;
+    left: 4%;
     background-color:#F4F9FF;
     display: flex;
     justify-content: space-around;
@@ -116,202 +119,47 @@
     color: rgb(178, 133, 49);
 }
 .parent{
-    position: relative;
+    height: 100vh;
+    width: 96%;
+    /* position: relative; */
+    display: grid;
+    /* grid-template-rows:10% 90% ; */
 }
 .grid{
-    height: 90%;
-    margin-top: 50px;
-    margin-left: 60px;
+    /* height: 90%; */
+    margin-top: 120px;
+    margin-left: 100px;
     display: grid;
     
     grid-template-columns:25% 25% 25% 25%;
     grid-template-rows: 25% 25% 25% 25% ;
-    grid-row-gap: 12px;
+    grid-row-gap: 10px;
+    
     
    
 }
-.rect1{
-    
+.rect{
+    box-shadow: 0 0 5px 5px rgb(184, 194, 212);
     height: 150px;
     width: 320px;
     background-color: #fff;
     border-radius: 20px;
     font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
-
-}
-
-
-
-.rect2{
-    display: inline-flex;
     
-    height: 150px;
-    width: 320px;
-    background-color: #fff;
-    border-radius: 20px;
-
 }
-.rect3{
-    height: 150px;
-    width: 320px;
-    background-color: #fff;
-    border-radius: 20px;
-
-}
-.rect4{
-    height: 150px;
-    width: 320px;
-    background-color: #fff;
-    border-radius: 20px;
-
-}
-.rect5{
-    height: 150px;
-    width: 320px;
-    background-color: #fff;
-    border-radius: 20px;
-
-}
-.rect6{
-    height: 150px;
-    width: 320px;
-    background-color: #fff;
-    border-radius: 20px;
-
-}
-.rect7{
-    height: 150px;
-    width: 320px;
-    background-color: #fff;
-    border-radius: 20px;
-
-}
-.rect8{
-    height: 150px;
-    width: 320px;
-    background-color: #fff;
-    border-radius: 20px;
-
-}
-.rect9{
-    height: 150px;
-    width: 320px;
-    background-color: #fff;
-    border-radius: 20px;
-
-}
-.rect10{
-    height: 150px;
-    width: 320px;
-    background-color: #fff;
-    border-radius: 20px;
-
-}
-.rect11{
-    height: 150px;
-    width: 320px;
-    background-color: #fff;
-    border-radius: 20px;
-
-}
-.rect12{
-    height: 150px;
-    width: 320px;
-    background-color: #fff;
-    border-radius: 20px;
-
+.hide{
+    display: none;
 }
 
-/* .rect1{
-    height: 150px;
-    width: 320px;
-    background-color:#FFFFFF;
-    position: absolute;
-    left: 5.3%;
-    right: 71.15%;
-    top: 16.3%;
-    bottom: 67.41%;
-    border: 2px solid #2B78D4;
-    border-radius: 24px;
-    
-    
-    
-} */
-
-/* .rect2{
-    Width:320px;
-    height: 150px;
-    
-    position: absolute;
-    left: 29%;
-    right: 48.7%;
-    top: 16.3%;
-    bottom: 67.41%;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 6px #CCE3FF;
-    border-radius: 24px;
+.subrect_p1{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.subrect_p2{
+    margin-top: 30px;
 }
 
-.rect3{
-    Width: 320px;
-    height: 150px;
-    
-    position: absolute;
-    left: 53%;
-    right: 26.25%;
-    top: 16.3%;
-    bottom: 67.41%;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 6px #CCE3FF;
-    border-radius: 24px;
-}
-.rect4{
-    Width: 320px;
-    height: 150px;
-    position: absolute;
-    left: 76.78%;
-    right: 3%;
-    top: 16.3%;
-    bottom: 67.41%;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 6px #CCE3FF;
-    border-radius: 24px;
-}
-.rect5{
-    Width: 320px;
-    height: 150px;
-    position: absolute;
-    left: 5.3%;
-    right: 71.15%;
-    top: 36.3%;
-    bottom: 47.41%;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 6px #CCE3FF;
-    border-radius: 24px;
-}
-.rect9{
-    Width: 320px;
-    height: 150px;
-    position: absolute;
-    left: 5.3%;
-    right: 71.15%;
-    top: 56.3%;
-    bottom: 27.41%;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 6px #CCE3FF;
-    border-radius: 24px;
-}
-.rect13{
-    Width: 320px;
-    height: 150px;
-    position: absolute;
-    left: 5.3%;
-    right: 71.15%;
-    top: 76.3%;
-    bottom: 7.41%;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 6px #CCE3FF;
-    border-radius: 24px;
-
-} */
